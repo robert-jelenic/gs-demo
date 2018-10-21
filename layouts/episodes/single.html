@@ -11,6 +11,7 @@
     <p><audio src="{{ .Params.audioLink1 }}" controls="controls"></audio></p>
     <p>Having playback issues? Click on the alternate player of this episode below.</p>
     <p><audio src="{{ .Params.audioLink2 }}" controls="controls"></audio></p>
+    <img src="{{ .Params.imageURL }}" alt="">
     <p>{{ .Content}}</p>
     {{ if .Params.guest }}
       <h3>Guest</h3>

@@ -2,7 +2,7 @@
 title: "Podcast 002: Why is Monterey Called the Language Capital of the World?"
 date: 2018-10-20T22:02:44+01:00
 draft: false
-guest: "dinopick"
+guest: "dino-pick"
 publishDate: 2016-05-25T00:00:00
 length: "22:55"
 audioLink1: "http://media.blubrry.com/globally_speaking/content.blubrry.com/globally_speaking/Globally_Speaking_Language_Capital_of_the_World.mp3"

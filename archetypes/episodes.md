@@ -5,4 +5,8 @@ draft: false
 guest: ""
 publishDate: ""
 length: ""
+audioLink1: ""
+audioLink2: ""
+transcriptURL: ""
+imageURL: ""
 ---
