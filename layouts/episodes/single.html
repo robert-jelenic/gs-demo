@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Title</title>
+  </head>
+  <body>
+    <p>{{ .PublishDate.Format "2 Jan 2006" }}</p>
+    <p>Length: {{ .Params.length }}</p>
+    <p><a href="{{ .Params.transcriptURL }}">Transcript Link</a></p>
+    <p><audio src="{{ .Params.audioLink1 }}" controls="controls"></audio></p>
+    <p>Having playback issues? Click on the alternate player of this episode below.</p>
+    <p><audio src="{{ .Params.audioLink2 }}" controls="controls"></audio></p>
+    <p>{{ .Content}}</p>
+    {{ if .Params.guest }}
+      <h3>Guest</h3>
+      <p>Name: {{ (index .Site.Data.guests .Params.guest).fullname }}</p>
+      <p>Name: {{ (index .Site.Data.guests .Params.guest).bio | markdownify }}</p>
+      <img src="{{ (index .Site.Data.guests .Params.guest).imageURL }}" alt="{{ (index .Site.Data.guests .Params.guest).fullname }} profile photo">
+    {{end}}
+  </body>
+</html>

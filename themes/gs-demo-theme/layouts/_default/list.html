@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Title</title>
+  </head>
+  <body>
+    <ul>
+      {{ range .Pages.ByTitle.Reverse }}
+      <li> <a href="{{ .URL }}">{{ .Title }}</a>  </li>
+      {{end}}
+    </ul>
+  </body>
+</html>
