@@ -22,7 +22,11 @@
         <th scope="row"><a href="{{ .URL }}">{{ .Title }}</a></th>
         <td>{{ .PublishDate.Format "2 Jan 2006" }}</td>
         <td>{{ .Params.length }}</td>
-        <td>{{ (index .Site.Data.guests .Params.guest).fullname }}</td>
+        {{ if .Params.guest }}
+          <td>{{ (index .Site.Data.guests .Params.guest).fullname }}</td>
+        {{ else}}
+          <td></td>
+        {{ end }}
       </tr>
       {{end}}
     </tbody>
