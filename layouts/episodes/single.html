@@ -15,7 +15,7 @@
     {{ if .Params.guest }}
       <h3>Guest</h3>
       <p>Name: {{ (index .Site.Data.guests .Params.guest).fullname }}</p>
-      <p>Name: {{ (index .Site.Data.guests .Params.guest).bio | markdownify }}</p>
+      <p>{{ (index .Site.Data.guests .Params.guest).bio | markdownify }}</p>
       <img src="{{ (index .Site.Data.guests .Params.guest).imageURL }}" alt="{{ (index .Site.Data.guests .Params.guest).fullname }} profile photo">
     {{end}}
   </body>
