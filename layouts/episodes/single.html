@@ -22,14 +22,12 @@
   <p><audio src="{{ .Params.audioLink2 }}" controls="controls"></audio></p>
   <p>{{ .Content}}</p>
   {{ if .Params.guest }}
-  <h2>Guest</h2>
-    <div class="media">
-    <img class="align-self-start mr-3 rounded img-fluid" src="{{ (index .Site.Data.guests .Params.guest).imageURL }}" alt="{{ (index .Site.Data.guests .Params.guest).fullname }} profile photo">
-      <div class="media-body">
-        <h5 class="mt-0">{{ (index .Site.Data.guests .Params.guest).fullname }}</h5>
-        <p>{{ (index .Site.Data.guests .Params.guest).bio | markdownify }}</p>
-      </div>
-    </div>
+  <h3>{{ (index .Site.Data.guests .Params.guest).fullname }}</h3>
+    <img class="rounded img-fluid " src="{{ (index .Site.Data.guests .Params.guest).imageURL }}" alt="{{ (index .Site.Data.guests .Params.guest).fullname }} profile photo">
+    <p>{{ (index .Site.Data.guests .Params.guest).bio | markdownify }}</p>
   {{end}}
+
+  {{ partial "disqus.html" . }}
+
 </div>
 {{ end }}
