@@ -10,3 +10,4 @@ audioLink2: "https://globallyspeakingradio.podbean.com/mf/web/fj3g62/Globally-Sp
 transcriptURL: "https://www.globallyspeakingradio.com/hubfs/Globally%20Speaking%20Episode%20Transcripts/Globally_Speaking_Podcast_014-Transcript.docx"
 imageURL: "https://www.globallyspeakingradio.com/hs-fs/hubfs/Localizing%20Content%20Marketing%20Beyond%20Borders.jpg"
 ---
+Content may be king according to most B2B marketers today, but how do you keep the king from losing its power when multiple markets and dozens of different languages are involved? Excellence in localization and compelling content are the answers.
