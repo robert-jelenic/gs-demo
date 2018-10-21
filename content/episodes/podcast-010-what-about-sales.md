@@ -1,7 +1,7 @@
 ---
 title: "Podcast 010: What about Sales?"
 date: 2018-10-20T22:02:44+01:00
-draft: true
+draft: false
 guest: ""
 guest-photo: ""
 guest-bio: ""

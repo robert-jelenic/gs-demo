@@ -1,7 +1,7 @@
 ---
 title: "Podcast 014: Localizing Marketing Content Beyond Borders"
 date: 2018-10-20T22:02:43+01:00
-draft: true
+draft: false
 guest: ""
 guest-photo: ""
 guest-bio: ""

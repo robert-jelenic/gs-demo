@@ -1,7 +1,7 @@
 ---
 title: "Podcast 011: What Makes a World-Class Global Marketing Professional?"
 date: 2018-10-20T22:02:44+01:00
-draft: true
+draft: false
 guest: ""
 guest-photo: ""
 guest-bio: ""

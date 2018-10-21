@@ -1,7 +1,7 @@
 ---
 title: "Podcast 040: How to Be Globally Appropriate, Locally Relevant (and Avoid Cultural Mistakes)"
 date: 2018-10-20T22:02:41+01:00
-draft: true
+draft: false
 guest: ""
 guest-photo: ""
 guest-bio: ""
