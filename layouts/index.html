@@ -1,0 +1,19 @@
+{{ define "main" }}
+
+<div class="jumbotron">
+  <div class="container">
+    <h1>Globally Speaking Radio</h1>
+  </div>
+</div>
+
+<div class="container">
+  <h2>We Speak Your Language</h2>
+  <p>Globally Speaking is a program for and from localization professionals. And how we help global companies achieve their goals in international markets.</p>
+  <p>We know what it’s like to be in your shoes, and to face the constant challenges that come with marketing in dozens of different languages and regions. Join the conversation!</p>
+  <ul>
+    {{ range .Sections }}
+    <li> <a href="{{ .URL}}">{{ .Title }}</a> </li>
+    {{end}}
+  </ul>
+</div>
+{{ end }}

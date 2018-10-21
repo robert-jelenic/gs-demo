@@ -1,0 +1,32 @@
+{{ define "main" }}
+
+<div class="jumbotron">
+  <div class="container">
+    <h1>List of Episodes</h1>
+  </div>
+</div>
+
+<div class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Podcast Name</th>
+        <th scope="col">Publish Date</th>
+        <th scope="col">Length</th>
+        <th scope="col">Guest</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{ range .Pages.ByTitle.Reverse }}
+      <tr>
+        <th scope="row"><a href="{{ .URL }}">{{ .Title }}</a></th>
+        <td>{{ .PublishDate.Format "2 Jan 2006" }}</td>
+        <td>{{ .Params.length }}</td>
+        <td>{{ (index .Site.Data.guests .Params.guest).fullname }}</td>
+      </tr>
+      {{end}}
+    </tbody>
+  </table>
+</div>
+
+{{ end }}

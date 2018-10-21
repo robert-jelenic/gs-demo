@@ -1,24 +1,31 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Title</title>
-  </head>
-  <body>
+{{ define "main" }}
+
+
+
+<div class="jumbotron">
+
+  <div class="container">
+
+
     <h1>{{ .Title }}</h1>
-    <p>{{ .PublishDate.Format "2 Jan 2006" }}</p>
-    <p>Length: {{ .Params.length }}</p>
-    <p><a href="{{ .Params.transcriptURL }}">Transcript Link</a></p>
-    <p><audio src="{{ .Params.audioLink1 }}" controls="controls"></audio></p>
-    <p>Having playback issues? Click on the alternate player of this episode below.</p>
-    <p><audio src="{{ .Params.audioLink2 }}" controls="controls"></audio></p>
-    <img src="{{ .Params.imageURL }}" alt="">
-    <p>{{ .Content}}</p>
-    {{ if .Params.guest }}
-      <h3>Guest</h3>
-      <p>Name: {{ (index .Site.Data.guests .Params.guest).fullname }}</p>
-      <p>{{ (index .Site.Data.guests .Params.guest).bio | markdownify }}</p>
-      <img src="{{ (index .Site.Data.guests .Params.guest).imageURL }}" alt="{{ (index .Site.Data.guests .Params.guest).fullname }} profile photo">
-    {{end}}
-  </body>
-</html>
+  </div>
+</div>
+
+<div class="container">
+
+  <img src="{{ .Params.imageURL }}" alt="">
+  <p>{{ .PublishDate.Format "2 Jan 2006" }}</p>
+  <p>Length: {{ .Params.length }}</p>
+  <p><a href="{{ .Params.transcriptURL }}">Transcript Link</a></p>
+  <p><audio src="{{ .Params.audioLink1 }}" controls="controls"></audio></p>
+  <p><em>Having playback issues? Click on the alternate player of this episode below.</em></p>
+  <p><audio src="{{ .Params.audioLink2 }}" controls="controls"></audio></p>
+
+  <p>{{ .Content}}</p>
+  {{ if .Params.guest }}
+  <h3>Guest</h3>
+  <p>Name: {{ (index .Site.Data.guests .Params.guest).fullname }}</p>
+  <p>{{ (index .Site.Data.guests .Params.guest).bio | markdownify }}</p>
+  <img src="{{ (index .Site.Data.guests .Params.guest).imageURL }}" alt="{{ (index .Site.Data.guests .Params.guest).fullname }} profile photo"> {{end}}
+</div>
+{{ end }}
