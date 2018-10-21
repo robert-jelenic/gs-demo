@@ -14,7 +14,6 @@
         <th scope="col">Date</th>
         <th scope="col">Length</th>
         <th scope="col">Guest</th>
-        <th scope="col">Audio</th>
       </tr>
     </thead>
     <tbody>
@@ -28,7 +27,6 @@
         {{ else}}
           <td></td>
         {{ end }}
-        <td><audio src="{{ .Params.audioLink1 }}" controls="controls"></audio></td>
       </tr>
       {{end}}
     </tbody>
