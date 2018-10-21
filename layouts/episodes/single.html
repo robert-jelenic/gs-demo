@@ -13,7 +13,7 @@
 
 <div class="container">
 
-  <img class="rounded" src="{{ .Params.imageURL }}" alt="">
+  <img class="rounded img-fluid" src="{{ .Params.imageURL }}" alt="">
   <p>{{ .PublishDate.Format "2 Jan 2006" }}</p>
   <p>Length: {{ .Params.length }}</p>
   <p><a href="{{ .Params.transcriptURL }}">Transcript Link</a></p>
@@ -24,7 +24,7 @@
   {{ if .Params.guest }}
   <h2>Guest</h2>
     <div class="media">
-    <img class="align-self-start mr-3 rounded" src="{{ (index .Site.Data.guests .Params.guest).imageURL }}" alt="{{ (index .Site.Data.guests .Params.guest).fullname }} profile photo">
+    <img class="align-self-start mr-3 rounded img-fluid" src="{{ (index .Site.Data.guests .Params.guest).imageURL }}" alt="{{ (index .Site.Data.guests .Params.guest).fullname }} profile photo">
       <div class="media-body">
         <h5 class="mt-0">{{ (index .Site.Data.guests .Params.guest).fullname }}</h5>
         <p>{{ (index .Site.Data.guests .Params.guest).bio | markdownify }}</p>
