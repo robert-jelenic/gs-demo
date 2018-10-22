@@ -10,4 +10,4 @@ transcriptURL: https://www.globallyspeakingradio.com/hubfs/Globally%20Speaking%2
 imageURL: ''
 
 ---
-Every translator today seems to be asking one question above all others. And the question is this--will we continue to have jobs in the future? Or will machine translation, better translation software, more speech, voice and text translator apps—and who knows what else—eventually make our jobs obsolete? The answers may surprise you. TEST
+Every translator today seems to be asking one question above all others. And the question is this--will we continue to have jobs in the future? Or will machine translation, better translation software, more speech, voice and text translator apps—and who knows what else—eventually make our jobs obsolete? The answers may surprise you. TEST TEST
