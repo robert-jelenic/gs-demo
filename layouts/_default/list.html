@@ -19,7 +19,7 @@
     <tbody>
       {{ range .Pages.ByTitle.Reverse }}
       <tr>
-        <th scope="row"><a href="{{ .URL }}">{{ .Title }}</a></th>
+        <td><a href="{{ .URL }}">{{ .Title }}</a></td>
         <td>{{ .PublishDate.Format "2 Jan 2006" }}</td>
         <td>{{ .Params.length }}</td>
         {{ if .Params.guest }}
