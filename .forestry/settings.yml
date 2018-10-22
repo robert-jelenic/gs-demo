@@ -8,8 +8,8 @@ sections:
   path: data
   label: Data
   create: all
-  match: "*.toml"
-  new_doc_ext: toml
+  match: "'*.toml'"
+  new_doc_ext: "'.toml'"
 - type: directory
   path: content/episodes
   label: Episodes
