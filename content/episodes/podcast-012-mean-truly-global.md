@@ -10,3 +10,4 @@ audioLink2: "https://globallyspeakingradio.podbean.com/mf/web/h47bzj/Globally-Sp
 transcriptURL: "https://www.globallyspeakingradio.com/hubfs/Globally%20Speaking%20Episode%20Transcripts/Globally_Speaking_Podcast_012-Transcript.docx"
 imageURL: "https://www.globallyspeakingradio.com/hs-fs/hubfs/Truly_Global.jpg"
 ---
+What's the roadmap for elevating localization's role in a global enterprise? In this episode we discuss best practices for success in international markets—and your career.

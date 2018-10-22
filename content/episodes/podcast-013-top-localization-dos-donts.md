@@ -8,6 +8,5 @@ audioLink1: http://media.blubrry.com/globally_speaking/content.blubrry.com/globa
 audioLink2: https://globallyspeakingradio.podbean.com/mf/web/jcpkjc/Globally_Speaking_Radio_Podcast_013_-_Top_Localization_Do_and_Dont.mp3
 transcriptURL: https://www.globallyspeakingradio.com/hubfs/Globally%20Speaking%20Episode%20Transcripts/Globally-Speaking-Podcast-013_Transcript.docx
 imageURL: https://www.globallyspeakingradio.com/hs-fs/hubfs/social-suggested-images/Top%20Localization%20Dos%20and%20Donts%20Podcast.jpg
-
 ---
 Renato and Michael share their opinions on the three top things localization professionals must and must not do to deliver optimum results. And value.
