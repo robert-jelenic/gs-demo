@@ -1,19 +1,14 @@
 {{ define "main" }}
 
-
-
 <div class="jumbotron">
-
   <div class="container">
-
-
     <h1>{{ .Title }}</h1>
   </div>
 </div>
 
 <div class="container">
-
   <img class="rounded img-fluid" src="{{ .Params.imageURL }}" alt="">
+  <p><a class="twitter-share-button" href="https://twitter.com/intent/tweet?text">Tweet</a></p>
   <p>{{ .PublishDate.Format "2 Jan 2006" }}</p>
   <p>Length: {{ .Params.length }}</p>
   <p><a href="{{ .Params.transcriptURL }}">Transcript Link</a></p>
@@ -23,11 +18,9 @@
   <p>{{ .Content}}</p>
   {{ if .Params.guest }}
   <h3>{{ (index .Site.Data.guests .Params.guest).fullname }}</h3>
-    <img class="rounded img-fluid " src="{{ (index .Site.Data.guests .Params.guest).imageURL }}" alt="{{ (index .Site.Data.guests .Params.guest).fullname }} profile photo">
-    <p>{{ (index .Site.Data.guests .Params.guest).bio | markdownify }}</p>
-  {{end}}
-
-  {{ partial "disqus.html" . }}
-
+  <img class="rounded img-fluid " src="{{ (index .Site.Data.guests .Params.guest).imageURL }}" alt="{{ (index .Site.Data.guests .Params.guest).fullname }} profile photo">
+  <p>{{ (index .Site.Data.guests .Params.guest).bio | markdownify }}</p>
+  {{end}} {{ partial "disqus.html" . }}
 </div>
+
 {{ end }}

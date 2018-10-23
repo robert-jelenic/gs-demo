@@ -1,5 +1,5 @@
 ---
-title: "Podcast 015: Unpacking Localization Strategies for a Global Hospitality Brand "
+title: "Podcast 015: Unpacking localization strategies for a global hospitality brand"
 date: 2018-10-20T22:02:43+01:00
 draft: false
 guest: "sonia-zamborsky"

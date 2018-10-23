@@ -1,5 +1,5 @@
 ---
-title: "Podcast 002: Why is Monterey Called the Language Capital of the World?"
+title: "Podcast 002: Why is Monterey called the language capital of the world?"
 date: 2018-10-20T22:02:44+01:00
 draft: false
 guest: "dino-pick"

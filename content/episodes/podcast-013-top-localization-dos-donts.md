@@ -1,5 +1,5 @@
 ---
-title: 'Podcast 013: Top Localization Dos and Don''ts'
+title: 'Podcast 013: Top localization dos and don''ts'
 date: 2018-10-20 21:02:43 +0000
 guest: ''
 publishDate: 2016-10-26 00:00:00 +0000

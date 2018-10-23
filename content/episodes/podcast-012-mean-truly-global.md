@@ -1,5 +1,5 @@
 ---
-title: "Podcast 012: What Does it Mean to be Truly Global?"
+title: "Podcast 012: What does it mean to be truly global?"
 date: 2018-10-20T22:02:43+01:00
 draft: false
 guest: "anna-schlegel"

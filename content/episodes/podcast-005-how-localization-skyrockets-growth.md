@@ -1,5 +1,5 @@
 ---
-title: "Podcast 005: How Localization Skyrockets Growth"
+title: "Podcast 005: How localization skyrockets growth"
 date: 2018-10-20T22:02:44+01:00
 draft: false
 guest: "georgia-vidler"

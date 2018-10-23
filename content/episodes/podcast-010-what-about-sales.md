@@ -1,5 +1,5 @@
 ---
-title: "Podcast 010: What about Sales?"
+title: "Podcast 010: What about sales?"
 date: 2018-10-20T22:02:44+01:00
 draft: false
 guest: ""

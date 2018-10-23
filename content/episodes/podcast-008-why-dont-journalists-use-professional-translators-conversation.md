@@ -1,5 +1,5 @@
 ---
-title: "Podcast 008: Why Don’t Journalists Use Professional Translators? A Conversation with Lane Greene"
+title: "Podcast 008: Why don’t journalists use professional translators? A conversation with Lane Greene"
 date: 2018-10-20T22:02:44+01:00
 draft: false
 guest: "lane-green"

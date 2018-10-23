@@ -1,5 +1,5 @@
 ---
-title: 'Podcast 004: Crowdsourcing: Convenience or Confusion?'
+title: 'Podcast 004: Crowdsourcing - Convenience or Confusion?'
 date: 2018-10-20 21:02:44 +0000
 guest: ''
 publishDate: 2016-06-22 00:00:00 +0000

@@ -1,19 +1,39 @@
 {{ define "main" }}
 
-<div class="jumbotron">
+<div class="jumbotron" style="height: 800px; background: url('https://res.cloudinary.com/dpuo6sogj/image/upload/e_vectorize/v1540331179/BackToBack-clr_cj4s7o.png') no-repeat center;">
   <div class="container">
-    <h1>Globally Speaking Radio</h1>
+    <h1 class="text-white">Globally Speaking Radio</h1>
+  </div>
+
+  <div class="container" style="padding-top: 40px">
+    <h2 class="text-white">We Speak Your Language</h2><br>
+    <h4 class="text-white">Globally Speaking is a program for and from localization professionals. And how we help global companies achieve their goals in international markets.</h4>
+    <h4 class="text-white">We know what it’s like to be in your shoes, and to face the constant challenges that come with marketing in dozens of different languages and regions. Join the conversation!</h4>
   </div>
 </div>
 
+
+
+
 <div class="container">
-  <h2>We Speak Your Language</h2>
-  <p>Globally Speaking is a program for and from localization professionals. And how we help global companies achieve their goals in international markets.</p>
-  <p>We know what it’s like to be in your shoes, and to face the constant challenges that come with marketing in dozens of different languages and regions. Join the conversation!</p>
-  <ul>
-    {{ range .Sections }}
-    <li> <a href="{{ .URL}}">{{ .Title }}</a> </li>
-    {{end}}
-  </ul>
+
+
+<div class="card-deck" style="padding-bottom: 20px">
+  {{ range first 3 .Pages.ByTitle.Reverse }}
+  <div class="card">
+
+    <a href="{{ .URL }}"><img class="card-img-top" src="{{ .Params.imageURL }}" alt="{{ .Title}} image"></a>
+    <div class="card-body">
+      <a href="{{ .URL }}"><h5 class="card-title">{{ .Title }}</h5></a>
+      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">{{ .PublishDate.Format "2 Jan 2006" }}</small>
+    </div>
+  </div>
+  {{ end }}
+</div>
+<a href="/episodes"><button type="button" class="btn btn-primary btn-lg btn-block">View all episodes</button></a>
 </div>
 {{ end }}

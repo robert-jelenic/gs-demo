@@ -1,0 +1,36 @@
+{{ define "main" }}
+
+<div class="jumbotron">
+  <div class="container">
+    <h1>List of Episodes</h1>
+  </div>
+</div>
+
+<div class="container">
+  <table class="table table-hover table-bordered table-sm">
+    <thead>
+      <tr>
+        <th scope="col">Episode Name</th>
+        <th scope="col">Date</th>
+        <th scope="col">Length</th>
+        <th scope="col">Guest</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{ range .Pages.ByTitle.Reverse }}
+      <tr>
+        <td><a href="{{ .URL }}">{{ .Title }}</a></td>
+        <td>{{ .PublishDate.Format "2 Jan 2006" }}</td>
+        <td>{{ .Params.length }}</td>
+        {{ if .Params.guest }}
+          <td>{{ (index .Site.Data.guests .Params.guest).fullname }}</td>
+        {{ else}}
+          <td></td>
+        {{ end }}
+      </tr>
+      {{end}}
+    </tbody>
+  </table>
+</div>
+
+{{ end }}

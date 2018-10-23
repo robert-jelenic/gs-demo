@@ -1,5 +1,5 @@
 ---
-title: "Podcast 003: How do Top Hospitality Brands Engage Local Travelers on a Global Scale?"
+title: "Podcast 003: How do top hospitality brands engage local travelers on a global scale?"
 date: 2016-10-20T22:02:44+01:00
 draft: false
 guest: "john-jimenez"

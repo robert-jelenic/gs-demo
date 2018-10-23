@@ -1,5 +1,5 @@
 ---
-title: "Podcast 011: What Makes a World-Class Global Marketing Professional?"
+title: "Podcast 011: What makes a world-class global marketing professional?"
 date: 2018-10-20T22:02:44+01:00
 draft: false
 guest: "nitish-singh"
