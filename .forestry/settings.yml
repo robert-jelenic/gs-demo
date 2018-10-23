@@ -9,7 +9,7 @@ sections:
   label: Guests
   create: all
   match: "**/*"
-  new_doc_ext: ".toml"
+  new_doc_ext: toml
 - type: directory
   path: content/episodes
   label: Episodes
