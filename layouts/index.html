@@ -26,7 +26,9 @@
     <div class="card-body">
       <a href="{{ .URL }}"><h5 class="card-title">{{ .Title }}</h5></a>
       <p class="card-text">{{ .Content}}</p>
-
+      {{ if .Params.guest }}
+        <p><strong>Guest</strong>: {{ (index .Site.Data.guests .Params.guest).fullname }}</p>
+      {{ end }}
     </div>
     <div class="card-footer">
       <small class="text-muted">{{ .PublishDate.Format "2 Jan 2006" }}</small>
