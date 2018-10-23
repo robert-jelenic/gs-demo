@@ -2,4 +2,31 @@
 label: Episodes
 hide_body: false
 is_partial: false
-fields: []
+fields:
+- type: text
+  default: Title
+  config:
+    required: true
+- type: text
+  name: guest
+  label: Guest
+- type: datetime
+  name: publishDate
+  label: Publish Date
+  config:
+    date_format: YYYY-MM-DD
+- type: text
+  name: length
+  label: length
+- type: text
+  name: audioLink1
+  label: audioLink1
+- type: text
+  name: audioLink2
+  label: audioLink2
+- type: text
+  name: transcriptURL
+  label: transcriptURL
+- type: text
+  name: imageURL
+  label: imageURL
