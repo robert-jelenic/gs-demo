@@ -3,5 +3,3 @@ label: Episodes
 hide_body: false
 is_partial: false
 fields: []
-pages:
-- content/episodes/test-episode.md
