@@ -4,29 +4,14 @@ hide_body: false
 is_partial: false
 fields:
 - type: text
-  default: Title
+  default: ''
   config:
     required: true
+  label: fullname
+  name: fullname
 - type: text
-  name: guest
-  label: Guest
-- type: datetime
-  name: publishDate
-  label: Publish Date
-  config:
-    date_format: YYYY-MM-DD
-- type: text
-  name: length
-  label: length
-- type: text
-  name: audioLink1
-  label: audioLink1
-- type: text
-  name: audioLink2
-  label: audioLink2
-- type: text
-  name: transcriptURL
-  label: transcriptURL
+  name: bio
+  label: bio
 - type: text
   name: imageURL
   label: imageURL
