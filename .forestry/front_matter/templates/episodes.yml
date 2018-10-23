@@ -15,5 +15,9 @@ fields:
 - type: text
   name: imageURL
   label: imageURL
+- type: boolean
+  default: false
+  label: draft
+  name: draft
 pages:
 - data/guests/hugh.toml
