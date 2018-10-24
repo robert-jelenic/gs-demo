@@ -8,3 +8,5 @@ fields:
     source:
       type: documents
       section: guests
+pages:
+- content/episodes/test2.md
