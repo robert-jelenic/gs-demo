@@ -1,0 +1,10 @@
+---
+label: test
+hide_body: false
+is_partial: false
+fields:
+- type: select
+  config:
+    source:
+      type: documents
+      section: guests
