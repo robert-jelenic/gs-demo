@@ -12,30 +12,25 @@
   </div>
 </div>
 
-
-
-
 <div class="container">
+  <div class="card-deck" style="padding-bottom: 20px">
+    {{ range first 3 .Pages.ByTitle.Reverse }}
+    <div class="card">
 
-
-<div class="card-deck" style="padding-bottom: 20px">
-  {{ range first 3 .Pages.ByTitle.Reverse }}
-  <div class="card">
-
-    <a href="{{ .URL }}"><img class="card-img-top" src="{{ .Params.imageURL }}" alt="{{ .Title}} image"></a>
-    <div class="card-body">
-      <a href="{{ .URL }}"><h5 class="card-title">{{ .Title }}</h5></a>
-      <p class="card-text">{{ .Content}}</p>
-      {{ if .Params.guest }}
+      <a href="{{ .URL }}"><img class="card-img-top" src="{{ .Params.imageURL }}" alt="{{ .Title}} image"></a>
+      <div class="card-body">
+        <a href="{{ .URL }}"><h5 class="card-title">{{ .Title }}</h5></a>
+        <p class="card-text">{{ .Content}}</p>
+        {{ if .Params.guest }}
         <p><strong>Guest</strong>: {{ (index .Site.Data.guests .Params.guest).fullname }}</p>
-      {{ end }}
+        {{ end }}
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">{{ .PublishDate.Format "2 Jan 2006" }}</small>
+      </div>
     </div>
-    <div class="card-footer">
-      <small class="text-muted">{{ .PublishDate.Format "2 Jan 2006" }}</small>
-    </div>
+    {{ end }}
   </div>
-  {{ end }}
-</div>
-<a href="/episodes"><button type="button" class="btn btn-primary btn-lg btn-block">View all episodes</button></a>
+  <a href="/episodes"><button type="button" class="btn btn-primary btn-lg btn-block">View all episodes</button></a>
 </div>
 {{ end }}
