@@ -8,5 +8,3 @@ fields:
     source:
       type: documents
       section: guests
-pages:
-- content/episodes/z-new-episode.md
