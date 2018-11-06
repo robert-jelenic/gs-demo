@@ -13,10 +13,3 @@ imageURL: ''
 <!-- Some random comment -->
 
 Every translator today seems to be asking one question above all others. And the question is this--will we continue to have jobs in the future? Or will machine translation, better translation software, more speech, voice and text translator apps—and who knows what else—eventually make our jobs obsolete? The answers may surprise you.
-
-<<<<<<< HEAD
-=======
-# H1 Header
-
-> j,hjkh
->>>>>>> 62abc7acdd7ecea0b9f7940a08679ce27ff6d558
